@@ -4,6 +4,7 @@ use AramHamo\MvcCore\View;
 
 class Dashboard{
   public function get(){
+    include "../middlewares/auth.php";
     return View::render("dashboard",array("title"=>"Dashboard"));
   }
   public function post(){
